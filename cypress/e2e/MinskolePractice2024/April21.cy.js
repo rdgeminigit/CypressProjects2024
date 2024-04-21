@@ -3,33 +3,24 @@
 let students = [
 
     {
-        firstName: "chinmay",
-        lastName: "deshpande",
-        email: "chinmaydeshpande010@gmail.com",
-        message: "I am learning"
-
-
+        firstName: "Radha",
+        lastName: "Deshmukh",
+        email: "rdeshmukhxxx@gmail.com",
+        message: "I am an Engineer"
     },
     {
-        firstName: "chinmay2",
-        lastName: "deshpande",
-        email: "chinmaydeshpande010@gmail.com",
-        message: "I am learning"
-
-
+        firstName: "Girija",
+        lastName: "Deshmukh",
+        email: "grdeshmukh@gmail.com",
+        message: "I am an Architect"
     },
     {
-        firstName: "chinmay3",
-        lastName: "deshpande",
-        email: "chinmaydeshpande010@gmail.com",
-        message: "I am learning"
-
-
+        firstName: "Gargi",
+        lastName: "Deshmukh",
+        email: "gargideshmukh@gmail.com",
+        message: "I am a Researcher"
     }
-
-
 ]
-
 
 describe('various ways to use fixture', function () {
    
@@ -47,8 +38,6 @@ describe('various ways to use fixture', function () {
             cy.get('input[name="last_name"]').type(this.data.studentOne.lastName)
             cy.get('input[name="email"]').type(this.data.studentOne.email)
             cy.get('textarea[name="message"]').type(this.data.studentOne.message)
-
-      
     })
 
     it.only('verify the fixture files', function () {
@@ -57,11 +46,7 @@ describe('various ways to use fixture', function () {
         cy.get('input[name="last_name"]').type(this.data.studentTwo.lastName)
         cy.get('input[name="email"]').type(this.data.studentTwo.email)
         cy.get('textarea[name="message"]').type(this.data.studentTwo.message)
-
-  
     })
-
-
 
     // only for one testcase
 
@@ -76,16 +61,12 @@ describe('various ways to use fixture', function () {
     //     })
     // })
 
-
-
-
     // it('verify the contact form', function () {
     //     cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
     //     cy.get('input[name="first_name"]').type(students[0].firstName)
     //     cy.get('input[name="last_name"]').type(students[0].lastName)
     //     cy.get('input[name="email"]').type(students[0].email)
     //     cy.get('textarea[name="message"]').type(students[0].message)
-
     // })
 
     // it.only('verify the contact form', function () {
@@ -95,7 +76,6 @@ describe('various ways to use fixture', function () {
     //         cy.get('input[name="last_name"]').type(el.lastName)
     //         cy.get('input[name="email"]').type(el.email)
     //         cy.get('textarea[name="message"]').type(el.message)
-
     //     })
 
     // })
