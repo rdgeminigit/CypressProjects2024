@@ -22,5 +22,6 @@ describe('Actions Page Test Suite', () => {
   it("should double click the Double Click me section", function(){
     cy.get('double-click').dblclick()
     cy.get('double-click h2').should('have.text', 'Double Click Me!')
+    ///This is an updated test
   })
 });
